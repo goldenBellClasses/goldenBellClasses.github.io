@@ -1,0 +1,522 @@
+body
+{
+   background-color : #f5e6cc;
+   margin : 0;
+   font-family : "Otomanopee One", sans-serif;
+}
+
+h1, .headend
+{
+   color : #f5e6cc;
+   text-shadow : -1px 2px 0 #000, 2px 1px 0 #000, 1px -2px 0 #000, -2px -1px 0 #000;
+}
+
+iframe
+{
+   width : 100%;
+   height : 100%;
+}
+
+.headend, .m_v_title, .m_v_card i, marquee, .heading, .test_name  { font-size : 2em; }
+
+.m_v_body, .test_body{ font-size : 1.5em; }
+
+.container { margin : 4% auto; }
+
+.m_v_card 
+{
+   text-align : center;
+   padding : 1%;
+   border : 3px solid black;
+   width : 28em;
+}
+
+.m_v_title, .m_v_card i
+{
+   color : #36454f;
+   text-shadow : -1px 2px 0 whitesmoke, 2px 1px 0 whitesmoke, 1px -2px 0 whitesmoke, -2px -1px 0 whitesmoke;
+}
+
+.heading 
+{
+   text-align : center;
+   color : #b109f3;
+   text-shadow : -2px 4px 0 whitesmoke , 4px 2px 0 whitesmoke , 2px -4px 0 whitesmoke , -4px -2px 0 whitesmoke;
+}
+
+.testimony
+{
+   font-size : 0.8em;
+   padding : 2%;
+   border : 4px solid #36454f;
+   width : 25%;
+   margin : 1%;
+}
+
+.slideshow-container 
+{
+   width : 75%;
+   position : relative;
+   margin : auto;
+   background-color : black;
+}
+
+.mySlides { display : none; }
+
+.fade 
+{
+   -webkit-animation-name : fade;
+   -webkit-animation-duration : 1.5s;
+   animation-name : fade;
+   animation-duration : 1.5s;
+}
+
+.c_img 
+{ 
+   vertical-align : middle;
+   margin-left : 12.5%; 
+   width : 75%;
+}
+
+.numbertext 
+{
+   color : #f2f2f2;
+   font-size : 2em;
+   padding : 8px 12px;
+   position : absolute;
+   top : 0;
+}
+
+.prev, .next 
+{
+   cursor : pointer;
+   position : absolute;
+   top : 50%;
+   width : auto;
+   padding : 16px;
+   margin-top : -22px;
+   color : white;
+   font-weight : bold;
+   font-size : 40px;
+   transition : 0.6s ease;
+   border-radius : 0 3px 3px 0;
+   user-select : none;
+}
+
+.next 
+{
+   right : 0;
+   border-radius : 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover { background-color : rgba(0, 0, 0, 0.8); }
+
+.dot 
+{
+   cursor : pointer;
+   height : 15px;
+   width : 15px;
+   margin : 0 2px;
+   background-color : #bbb;
+   border-radius : 50%;
+   display : inline-block;
+   transition : background-color 0.6s ease;
+}
+
+.active, .dot:hover { background-color : #717171; }
+
+.card { width : 30%; }
+
+.directors 
+{
+   width : 22%;
+   background-image : linear-gradient(to right, #a64ac9 , #fccd04);
+   border : 2px solid whitesmoke;
+   padding : 1%;
+}
+
+.dp 
+{
+   border-radius : 50%;
+   width : 75%;
+}
+
+.man_name 
+{
+   font-size : 1.65em;
+   text-shadow : -1px 2px 0 #000, 2px 1px 0 #000, 1px -2px 0 #000, -2px -1px 0 #000;
+   color : #f5e6cc;
+}
+
+.bn
+{
+   background-image : linear-gradient(135deg, #fccd04, #a64ac9);
+   box-sizing : border-box;
+   color : #ffffff;
+   display : block;
+   font-size : 190%;
+   font-weight : 600;
+   padding : 4px;
+   position : relative;
+   width : 7em;
+   z-index : 2;
+}
+ 
+.bn:hover { color : #fff; }
+ 
+.bn .bn_span 
+{
+   align-items : center;
+   background : #0e0e10;
+   border-radius : 6px;
+   display : flex;
+   justify-content : center;
+   height : 100%;
+   transition : background 0.5s ease;
+   width : 100%;
+}
+ 
+.bn:hover .bn_span { background : transparent; }
+
+.teachers 
+{
+   box-shadow : rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+   width : 23%;
+   margin : 1%;
+}
+
+.teachers:nth-child(even) { background-image : linear-gradient(#fccd04, #17e9e0); }
+
+.teachers:nth-child(odd) { background-image : linear-gradient(#17e9e0, #fccd04); }
+
+.teachers h1
+{
+   width : 100%;
+   background-color : #d2042d;
+   font-size : 2.5em;
+}
+
+.offers
+{
+   width : 23%;
+   color : #36454f;
+   margin : 0.25%;
+}
+
+.offer_content
+{
+   padding : 5%;
+   font-size : 1.25em;
+   text-align : center;
+}
+
+.offer_icon 
+{
+   font-size : 1.75em;
+   width : 1.75em;
+   margin : auto;
+   text-align : center;
+   padding : 0.2em;
+   border-radius : 50%;
+   border : 4px solid #36454f;
+   background-color : #fccd04;
+}
+
+#what_we_offer
+{
+   display : flex;
+   justify-content : center;
+   flex-wrap : wrap;
+}
+
+#modal { display : none; }
+
+#nav 
+{
+   overflow : hidden;
+   top : 0;
+   left : 0;
+   background-color : #a64ac9;
+   color : #fccd04;
+   text-align : center;
+   font-size : 2.5em;
+   text-shadow : -1px 2px 0 #000, 2px 1px 0 #000, 1px -2px 0 #000, -2px -1px 0 #000;
+   padding : 1%;
+}
+
+#buttons 
+{
+   display : flex;
+   justify-content : space-between;
+   font-size : 1.5em;
+}
+
+#buttons a 
+{
+   padding : 1%;
+   text-decoration : none;
+   margin : 1%;
+   color : #36454f;
+   background-color : #fccd04;
+   border : 3px solid #36454f;
+   border-radius : 25%;
+}
+
+#buttons a:hover
+{
+   background-color : #17e9e0;
+   border : 3px solid whitesmoke;
+}
+
+#m_v 
+{
+   display : flex;
+   flex-wrap : wrap;
+   justify-content : center;
+}
+
+#testimonials
+{
+   display : flex;
+   justify-content : center;
+   flex-wrap : wrap;
+}
+
+#admission 
+{
+   height : 375px;
+   width : 100%;
+   background : url(images/admission.png) center repeat-x;
+   background-size : auto 100%;
+}
+
+#end 
+{
+   margin-top : 5%;
+   padding : 1%;
+   display : flex;
+   justify-content : space-around;
+   color : whitesmoke;
+   font-size : 175%;
+   background-color : #a64ac9;
+}
+
+#faculty 
+{
+   display : flex;
+   justify-content : space-evenly;
+   flex-wrap : wrap;
+}
+
+#txt 
+{
+   width : 72%;
+   padding : 1%;
+   background-image : linear-gradient(to right, #fccd04, #a64ac9, #17e9e0);
+   color : black;
+}
+
+#txt .man_name { font-size : 2em; }
+
+#para
+{
+   padding : 1%;
+   font-size : 145%;
+}
+
+#end a
+{
+   text-decoration : none;
+   color : whitesmoke;
+}
+
+@-webkit-keyframes fade 
+{
+  from {opacity : .4} 
+  to {opacity : 1}
+}
+
+@keyframes fade 
+{
+  from {opacity : .4} 
+  to {opacity : 1}
+}
+
+@media screen and (max-width: 1500px)
+{
+   #nav { font-size : 2em; }
+
+   .m_v_card { width : 20em; }
+
+   .teachers h1, .headend, .m_v_title, .m_v_card i, marquee, .heading, .test_name, .offer_icon  { font-size : 1.5em; }
+
+   .offer_icon { width : 1.5em; }
+
+   .m_v_body, .test_body, #buttons, .offer_content { font-size : 1em; }
+
+   .offers { margin : 0.5%; }
+
+   #end, .bn { font-size : 125%; }
+
+   #para { font-size : 97%; }
+
+   #admission { height : 336px; }
+
+   .man_name, .numbertext { font-size : 1.2em; }
+}
+
+@media screen and (max-width: 1100px)
+{
+   #nav, .test_name, .headend { font-size : 1.5em;}
+
+   .m_v_card { width : 15em;}
+
+   .m_v_title, .m_v_card i, marquee, .heading, .test_body, .offer_icon { font-size : 1em; }
+   
+   .m_v_body, #buttons, .offer_content { font-size : 0.75em; }
+   
+   #txt .man_name { font-size : 200%; }
+
+   #end { font-size : 90%; }
+
+   #testimonials, #para { font-size : 70%; }
+
+   .testimony 
+   {
+      padding: 1%;
+      width: 29%;
+      margin: 0.5%;
+   }
+
+   #admission { height : 250px; }
+
+   .man_name, .bn { font-size : 0.89em; }
+}
+
+@media screen and (max-width: 800px)
+{
+   .teachers h1, #nav, .test_name, .numbertext { font-size : 1em; }
+
+   .m_v_card { width : 10em; }
+
+   .m_v_title, .m_v_card i, marquee, .heading, .test_body, .offer_icon { font-size : 0.75em; }
+
+   .offer_icon, .testimony { border-width : 2px; }
+   
+   .m_v_body, #buttons, .offer_content { font-size : 0.5em; }
+
+   #txt .man_name { font-size : 150%; }
+
+   #para { font-size : 56%; }
+
+   .man_name { font-size : 0.6em; }
+
+   #admission { height: 190px; }
+
+   #end, #testimonials { font-size: 75%; }
+
+   .bn
+   {
+      width : 6em;
+      font-size : 69%;
+   }
+}
+
+@media screen and (max-width: 550px)
+{
+   #nav, .test_name, .prev, .next { font-size : 1.5em; }
+
+   .m_v_card, .c_img, .slideshow-container { width : 100%; }
+
+   .m_v_title, .m_v_card i, marquee, .heading, .test_body, .offer_icon { font-size : 1em; }
+   
+   .m_v_body, #buttons, .offer_content { font-size : 0.75em; }
+
+   #buttons a { border-radius : 0; }
+
+   .container { margin-top : 7.5%; }
+
+   .c_img { margin-left : 0; }
+
+   .testimony 
+   {
+      padding : 5%;
+      width : 75%;
+      margin : 2.5%;
+      border-end-start-radius : 16%;
+   } 
+
+   .card, .offers { width : 97%; }
+
+   #admission { height : 283px; }
+
+   #end { flex-wrap : wrap; }
+
+   .directors, #txt, .teachers { width : 45%; }
+
+   .man_name { font-size : 90%; }
+
+   #para { font-size : 50%; }
+
+   #modal  
+   { 
+      position : fixed;
+      z-index : 3; 
+      padding-top : 100px; 
+      left : 0;
+      top : 0;
+      width : 100%;
+      height : 100%; 
+      overflow : auto; 
+   }
+   
+   #modal-content 
+   {
+      background-color : #fefefe;
+      margin : auto;
+      padding : 20px;
+      border : 1px solid #888;
+      width : 80%;
+      background-image : linear-gradient(to right, #fccd04, #a64ac9, #17e9e0);
+      color : black;
+      font-size : 68%;
+   }
+
+   .close 
+   {
+      color : black;
+      float : right;
+      font-size : 28px;
+      font-weight : bold;
+   }
+   
+   .close:hover, .close:focus 
+   {
+      color : #000;
+      text-decoration : none;
+      cursor : pointer;
+   }
+
+   #txt { display : none; }
+}
+
+@media screen and (max-width: 400px)
+{
+   #nav, .test_name{ font-size : 1.25em;}
+
+   .m_v_card { width : 100%; }
+
+   .test_body { font-size : 1.5em; }
+
+   .test_name { font-size : 2em; }
+   
+   #admission { height : 249px; }
+
+   #testimonials { font-size : 45%; }
+
+   .man_name, .bn { font-size : 70%; }
+
+   .bn { width : 6em }
+
+   #para { font-size : 38%; }
+}
