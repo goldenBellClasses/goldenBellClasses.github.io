@@ -162,6 +162,7 @@ iframe
    position : relative;
    width : 7em;
    z-index : 2;
+   margin : auto;
 }
  
 .bn:hover { color : #fff; }
