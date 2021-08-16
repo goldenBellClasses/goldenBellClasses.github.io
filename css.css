@@ -133,6 +133,7 @@ iframe
    background-image : linear-gradient(to right, #a64ac9 , #fccd04);
    border : 2px solid whitesmoke;
    padding : 1%;
+   text-align : center;
 }
 
 .dp 
@@ -146,6 +147,7 @@ iframe
    font-size : 1.65em;
    text-shadow : -1px 2px 0 #000, 2px 1px 0 #000, 1px -2px 0 #000, -2px -1px 0 #000;
    color : #f5e6cc;
+   text-align : center;
 }
 
 .bn
