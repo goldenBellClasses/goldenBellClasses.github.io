@@ -183,6 +183,7 @@ iframe
    box-shadow : rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
    width : 23%;
    margin : 1%;
+   text-align : center;
 }
 
 .teachers:nth-child(even) { background-image : linear-gradient(#fccd04, #17e9e0); }
@@ -193,7 +194,7 @@ iframe
 {
    width : 100%;
    background-color : #d2042d;
-   font-size : 2.5em;
+   font-size : 2em;
 }
 
 .offers
@@ -201,13 +202,23 @@ iframe
    width : 23%;
    color : #36454f;
    margin : 0.25%;
+   text-align : center;
+}
+
+.offer_title
+{
+   width : 10em;
+   margin : 5% auto;
+   border : 4px solid;
+   border-radius : 20px;
+   font-size : 1.35em;
+   background-color : #fccd04;
 }
 
 .offer_content
 {
-   padding : 5%;
+   padding : 2.5%;
    font-size : 1.25em;
-   text-align : center;
 }
 
 .offer_icon 
@@ -256,16 +267,14 @@ iframe
    padding : 1%;
    text-decoration : none;
    margin : 1%;
-   color : #36454f;
-   background-color : #fccd04;
    border : 3px solid #36454f;
-   border-radius : 25%;
-}
-
-#buttons a:hover
-{
-   background-color : #17e9e0;
-   border : 3px solid whitesmoke;
+   border-radius : 45px;
+   box-shadow : 5px 10px;
+   animation : blink 5.0s linear infinite;
+   -webkit-animation : blink 5.0s linear infinite;
+   -moz-animation : blink 5.0s linear infinite;
+   -ms-animation : blink 5.0s linear infinite;
+   -o-animation : blink 5.0s linear infinite;
 }
 
 #m_v 
@@ -330,16 +339,73 @@ iframe
    color : whitesmoke;
 }
 
+@keyframes blink 
+{
+   0% 
+   {
+      background-color : #fccd04;
+      color : #36454f;
+   }
+   25% 
+   { 
+      background-color : #a64ac9; 
+      color : #fccd04;
+   }
+   50% 
+   { 
+      background-color : #a64ac9; 
+      color : #fccd04;
+   }
+   75% 
+   { 
+      background-color : #fccd04;
+      color : #36454f;
+   }
+   100% 
+   { 
+      background-color : #fccd04;
+      color : #36454f;
+   }
+}
+
+@-webkit-keyframes blink {
+   0% 
+   {
+      background-color : #fccd04;
+      color : #36454f; 
+   }
+   25% 
+   { 
+      background-color : #a64ac9; 
+      color : #fccd04;
+   }
+   50% 
+   { 
+      background-color : #a64ac9; 
+      color : #fccd04;
+   }
+   75% 
+   { 
+      background-color : #fccd04;
+      color : #36454f; 
+   }
+   100% 
+   { 
+      background-color : #fccd04;
+      color : #36454f; 
+   }
+}
+
 @-webkit-keyframes fade 
 {
-  from {opacity : .4} 
-  to {opacity : 1}
+  from { opacity : .4 } 
+  to { opacity : 1 }
 }
 
 @keyframes fade 
 {
-  from {opacity : .4} 
-  to {opacity : 1}
+  from { opacity : .4 } 
+  to { opacity : 1 }
 }
 
 @media screen and (max-width: 1500px)
@@ -362,7 +428,7 @@ iframe
 
    #admission { height : 336px; }
 
-   .man_name, .numbertext { font-size : 1.2em; }
+   .man_name, .numbertext, .offer_title { font-size : 1.2em; }
 }
 
 @media screen and (max-width: 1100px)
@@ -371,7 +437,7 @@ iframe
 
    .m_v_card { width : 15em;}
 
-   .m_v_title, .m_v_card i, marquee, .heading, .test_body, .offer_icon { font-size : 1em; }
+   .m_v_title, .m_v_card i, marquee, .heading, .test_body, .offer_icon, .teachers h1 { font-size : 1em; }
    
    .m_v_body, #buttons, .offer_content { font-size : 0.75em; }
    
@@ -390,18 +456,26 @@ iframe
 
    #admission { height : 250px; }
 
-   .man_name, .bn { font-size : 0.89em; }
+   .man_name, .bn, .offer_title { font-size : 0.89em; }
+
+   #buttons a, .m_v_card { border-width : 2px; }
+
+   #buttons a
+   {
+      box-shadow : 3px 6px;
+      padding : 2%;
+   }
 }
 
 @media screen and (max-width: 800px)
 {
-   .teachers h1, #nav, .test_name, .numbertext { font-size : 1em; }
+   #nav, .test_name, .numbertext { font-size : 1em; }
 
    .m_v_card { width : 10em; }
 
-   .m_v_title, .m_v_card i, marquee, .heading, .test_body, .offer_icon { font-size : 0.75em; }
+   .teachers h1, .m_v_title, .m_v_card i, marquee, .heading, .test_body, .offer_icon { font-size : 0.75em; }
 
-   .offer_icon, .testimony { border-width : 2px; }
+   .offer_icon, .testimony, .offer_title { border-width : 2px; }
    
    .m_v_body, #buttons, .offer_content { font-size : 0.5em; }
 
@@ -409,7 +483,7 @@ iframe
 
    #para { font-size : 56%; }
 
-   .man_name { font-size : 0.6em; }
+   .man_name, .offer_title { font-size : 0.6em; }
 
    #admission { height: 190px; }
 
@@ -430,12 +504,12 @@ iframe
 
    .m_v_title, .m_v_card i, marquee, .heading, .test_body, .offer_icon { font-size : 1em; }
    
-   .m_v_body, #buttons, .offer_content { font-size : 0.75em; }
+   .m_v_body, #buttons, .offer_content, .offer_title, .teachers h1 { font-size : 0.75em; }
 
-   #buttons a { border-radius : 0; }
+   .offer_title, .offers { margin : 1% auto; }
 
    .container { margin-top : 7.5%; }
-
+ 
    .c_img { margin-left : 0; }
 
    .testimony 
