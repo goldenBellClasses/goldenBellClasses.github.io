@@ -224,6 +224,11 @@ iframe
    font-size : 1.25em;
 }
 
+.offer_content strong
+{
+   color : #a64ac9;
+}
+
 .offer_icon 
 {
    font-size : 1.75em;
