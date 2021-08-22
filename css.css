@@ -329,7 +329,7 @@ iframe
 {
    width : 72%;
    padding : 1%;
-   background-image : linear-gradient(to right, #fccd04, #a64ac9, #17e9e0);
+   background-image : linear-gradient(to right, #fccd04, #c962f0, #17e9e0);
    color : black;
 }
 
@@ -559,7 +559,7 @@ iframe
       padding : 20px;
       border : 1px solid #888;
       width : 80%;
-      background-image : linear-gradient(to right, #fccd04, #a64ac9, #17e9e0);
+      background-image : linear-gradient(to right, #fccd04, #c962f0, #17e9e0);
       color : black;
       font-size : 68%;
    }
