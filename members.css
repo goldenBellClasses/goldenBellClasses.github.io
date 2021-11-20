@@ -1,0 +1,296 @@
+body
+{
+   background-color : #f5e6cc;
+   margin : 0;
+   font-family : "Otomanopee One", sans-serif;
+}
+
+h1, .headend
+{
+   color : #f5e6cc;
+   text-shadow : -1px 2px 0 #000, 2px 1px 0 #000, 1px -2px 0 #000, -2px -1px 0 #000;
+}
+
+.heading { font-size : 2em; }
+
+.container { margin : 4% auto; }
+
+.heading 
+{
+   text-align : center;
+   color : #b109f3;
+   text-shadow : -2px 4px 0 whitesmoke , 4px 2px 0 whitesmoke , 2px -4px 0 whitesmoke , -4px -2px 0 whitesmoke;
+}
+
+.directors 
+{
+   width : 22%;
+   background-image : linear-gradient(to right, #a64ac9 , #fccd04);
+   border : 2px solid whitesmoke;
+   padding : 1%;
+   text-align : center;
+}
+
+.dp 
+{
+   border-radius : 50%;
+   width : 75%;
+}
+
+.man_name 
+{
+   font-size : 1.65em;
+   text-shadow : -1px 2px 0 #000, 2px 1px 0 #000, 1px -2px 0 #000, -2px -1px 0 #000;
+   color : #f5e6cc;
+   text-align : center;
+}
+
+.bn
+{
+   background-image : linear-gradient(135deg, #fccd04, #a64ac9);
+   box-sizing : border-box;
+   color : #ffffff;
+   display : block;
+   font-size : 190%;
+   font-weight : 600;
+   padding : 4px;
+   position : relative;
+   width : 7em;
+   z-index : 2;
+   margin : auto;
+}
+ 
+.bn:hover { color : #fff; }
+ 
+.bn .bn_span 
+{
+   align-items : center;
+   background : #0e0e10;
+   border-radius : 6px;
+   display : flex;
+   justify-content : center;
+   height : 100%;
+   transition : background 0.5s ease;
+   width : 100%;
+}
+ 
+.bn:hover .bn_span { background : transparent; }
+
+.teachers 
+{
+   box-shadow : rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+   width : 23%;
+   margin : 1%;
+   text-align : center;
+}
+
+.teachers:nth-child(even) { background-image : linear-gradient(#fccd04, #17e9e0); }
+
+.teachers:nth-child(odd) { background-image : linear-gradient(#17e9e0, #fccd04); }
+
+.teachers h1
+{
+   width : 100%;
+   background-color : #d2042d;
+   font-size : 2em;
+}
+
+#modal { display : none; }
+
+#nav 
+{
+   overflow : hidden;
+   top : 0;
+   left : 0;
+   background-color : #a64ac9;
+   color : #fccd04;
+   text-align : center;
+   font-size : 2.5em;
+   text-shadow : -1px 2px 0 #000, 2px 1px 0 #000, 1px -2px 0 #000, -2px -1px 0 #000;
+   padding : 1%;
+}
+
+#faculty 
+{
+   display : flex;
+   justify-content : center;
+   flex-wrap : wrap;
+}
+
+#txt 
+{
+   width : 46.5%;
+   padding : 1%;
+   background-image : linear-gradient(to right, #fccd04, #c962f0, #17e9e0);
+   color : black;
+}
+
+#txt .man_name { font-size : 2em; }
+
+#para
+{
+   padding : 1%;
+   font-size : 145%;
+}
+
+#copyright
+{
+   text-align : center;
+   background-color : #36454f;
+   color : #f5e6cc;
+   font-size : 1em;
+   margin-top : 2em;
+}
+
+#copyright a
+{
+   color : #fccd04;
+   text-decoration : none;
+}
+
+@media screen and (max-width: 1500px)
+{
+   #nav { font-size : 2em; }
+
+   .teachers h1, .heading { font-size : 1.5em; }
+
+   .bn { font-size : 125%; }
+
+   #para { font-size : 97%; }
+
+   .man_name { font-size : 1.2em; }
+}
+
+@media screen and (max-width: 1100px)
+{
+   #nav { font-size : 1.5em;}
+
+   .heading, .teachers h1 { font-size : 1em; }
+   
+   #txt .man_name { font-size : 200%; }
+
+   #para { font-size : 70%; }
+
+   #copyright 
+   {  
+      font-size : 0.75em;
+      margin-top : 1em;
+   }
+
+   .testimony 
+   {
+      padding: 1%;
+      width: 29%;
+      margin: 0.5%;
+   }
+
+   .man_name, .bn { font-size : 0.89em; }
+}
+
+@media screen and (max-width: 800px)
+{
+   #nav { font-size : 1em; }
+
+   .teachers h1, .heading { font-size : 0.75em; }
+
+   .offer_icon, .testimony, .offer_title { border-width : 2px; }
+   
+   .m_v_body, #buttons, .offer_content { font-size : 0.5em; }
+
+   #txt .man_name { font-size : 150%; }
+
+   #para { font-size : 56%; }
+
+   .man_name, .offer_title { font-size : 0.6em; }
+
+   #admission { height: 190px; }
+
+   #end, #testimonials { font-size: 75%; }
+
+   #copyright 
+   {  
+      font-size : 0.5em;
+      margin-top : 0.75em;
+   }
+
+   .bn
+   {
+      width : 6em;
+      font-size : 69%;
+   }
+}
+
+@media screen and (max-width: 550px)
+{
+   #nav { font-size : 1.5em; }
+
+   .heading { font-size : 1em; }
+   
+   .teachers h1 { font-size : 0.75em; }
+
+   .container { margin-top : 7.5%; }
+
+   .directors, #txt { width : 45%; }
+
+   .teachers { width : 48%; }
+
+   .man_name { font-size : 90%; }
+
+   #para { font-size : 50%; }
+
+   #modal  
+   { 
+      position : fixed;
+      z-index : 3; 
+      padding-top : 100px; 
+      left : 0;
+      top : 0;
+      width : 100%;
+      height : 100%; 
+      overflow : auto; 
+   }
+   
+   #modal-content 
+   {
+      background-color : #fefefe;
+      margin : auto;
+      padding : 20px;
+      border : 1px solid #888;
+      width : 80%;
+      background-image : linear-gradient(to right, #fccd04, #c962f0, #17e9e0);
+      color : black;
+      font-size : 68%;
+   }
+
+   .close 
+   {
+      color : black;
+      float : right;
+      font-size : 28px;
+      font-weight : bold;
+   }
+   
+   .close:hover, .close:focus 
+   {
+      color : #000;
+      text-decoration : none;
+      cursor : pointer;
+   }
+
+   #txt { display : none; }
+
+   #copyright { font-size : 0.65em; }
+}
+
+@media screen and (max-width: 400px)
+{
+   #nav { font-size : 1.25em;}
+
+   .man_name, .bn { font-size : 70%; }
+
+   .bn { width : 6em }
+
+   .teachers h1 { font-size : 0.69em; }
+
+   #para { font-size : 38%; }
+}

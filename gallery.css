@@ -1,0 +1,142 @@
+body
+{
+   background-color : #f5e6cc;
+   margin : 0;
+   font-family : "Otomanopee One", sans-serif;
+}
+
+.container 
+{ 
+   margin : 1em auto; 
+   width : 90em;
+}
+
+.image 
+{
+   width : 26.7em;
+   margin : 1em;
+   border : 0.5em solid black;
+   transition : transform .2s;
+}
+
+.image:hover 
+{
+   transform : scale(1.5);
+}
+
+.nav 
+{
+   overflow : hidden;
+   font-size : 2.5em;
+   top : 0;
+   left : 0;
+   text-align : center;
+   padding : 1%;
+}
+
+#title_nav
+{
+   background-color : #a64ac9;
+   color : #fccd04;
+   text-shadow : -1px 2px 0 #000, 2px 1px 0 #000, 1px -2px 0 #000, -2px -1px 0 #000;
+}
+
+#inaugration
+{
+   margin-top : 0.75em;
+   background-image : linear-gradient(to right, red , whitesmoke, red);
+   color : red;
+   text-shadow : -1px 2px 0 #fff, 2px 1px 0 #fff, 1px -2px 0 #fff, -2px -1px 0 #fff;
+}
+
+#independence_day
+{
+   background-image : linear-gradient(to right, #f4c430 , whitesmoke, green);
+   color : blue;
+   text-shadow : -1px 2px 0 #fff, 2px 1px 0 #fff, 1px -2px 0 #fff, -2px -1px 0 #fff;
+}
+
+#copyright
+{
+   text-align : center;
+   background-color : #36454f;
+   color : #f5e6cc;
+   font-size : 1em;
+   margin-top : 2em;
+}
+
+#copyright a
+{
+   color : #fccd04;
+   text-decoration : none;
+}
+
+@media screen and (max-width: 1500px)
+{
+   .nav { font-size : 2em; }
+
+   .container { width : 64em; }
+
+   .image
+   {
+      width : 19.56em;
+      margin : 0.5em;
+      border: 0.25em solid black;
+   }
+}
+
+@media screen and (max-width: 1100px)
+{
+   .nav { font-size : 1.5em; }
+
+   .container { width : 45em; }
+
+   .image { width: 20.75em; }
+
+   #copyright 
+   {  
+      font-size : 0.75em;
+      margin-top : 1em;
+   }
+}
+
+@media screen and (max-width: 800px)
+{
+   .nav { font-size : 1em; }
+
+   .container { width : 26em; }
+
+   .image 
+   {
+      width : 25.3em;
+      margin : 0;
+   }
+
+   .image:hover { transform : none; }
+
+   #copyright 
+   {  
+      font-size : 0.5em;
+      margin-top : 0.75em;
+   }
+}
+
+@media screen and (max-width: 550px)
+{
+   .nav { font-size : 1.5em; }
+
+   .container { width : 20em; }
+
+   .image 
+   {
+      width : 19.5em;
+      margin : 0;
+   }
+
+   #copyright { font-size : 0.65em; }
+}
+
+@media screen and (max-width: 400px)
+{
+   .nav { font-size : 1.25em;}
+}
