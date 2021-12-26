@@ -40,6 +40,23 @@ body
    margin : 2em auto;
 }
 
+#int_navigator
+{
+   background-color : #a64ac9;
+   padding : 1%;
+   text-decoration : none;
+   color : #f5e6cc;
+   font-size : 1.25em;
+   border-radius : 10px;
+   box-shadow : 8px 4px black;
+}
+
+#int_navigator:active 
+{ 
+   box-shadow : 0 5px;
+   transform : translateY(4px);
+}
+
 #nav 
 {
    overflow : hidden;
@@ -81,14 +98,14 @@ body
    display : flex;
    justify-content : space-between;
    font-size : 1.5em;
-   width : 20em;
+   width : 22em;
    margin-right : 1em;
 }
 
 #buttons a 
 {
    padding : 0.25em;
-   width : 8em;
+   width : 9em;
    text-align : center;
    text-decoration : none;
    border : 3px solid #36454f;
@@ -125,7 +142,7 @@ body
    background-color : #36454f;
    color : #f5e6cc;
    font-size : 1em;
-   margin-top : 2em;
+   margin-top : 4em;
 }
 
 #copyright a
@@ -212,7 +229,7 @@ body
       margin-bottom : -3em;
    }
 
-   #opening_desc { font-size : 1em; }
+   #opening_desc, #int_navigator { font-size : 1em; }
 
    #pane { width : 66em; }
 }
@@ -237,15 +254,13 @@ body
       margin-bottom : -2em;
    }
 
-   #opening_desc { font-size : 0.8em; }
+   #opening_desc, #int_navigator { font-size : 0.8em; }
 
    #pane { width : 50em; }
 
-   #copyright 
-   {  
-      font-size : 0.75em;
-      margin-top : 1em;
-   }
+   #int_navigator { box-shadow : 4px 2px black; }
+
+   #copyright { font-size : 0.75em; }
 }
 
 @media screen and (max-width: 800px)
@@ -260,17 +275,13 @@ body
 
    #nav, #head { font-size : 1em; }
 
-   #buttons { font-size : 0.75em; }
+   #buttons, #int_navigator { font-size : 0.75em; }
 
    #opening_desc { font-size : 0.55em; }
 
    #pane { width : 34em; }
 
-   #copyright 
-   {  
-      font-size : 0.5em;
-      margin-top : 0.75em;
-   }
+   #copyright { font-size : 0.5em; }
 }
 
 @media screen and (max-width: 550px)
@@ -312,6 +323,13 @@ body
    #pane { width : 23em; }
 
    #copyright { font-size : 0.65em; }
+
+   #int_navigator 
+   { 
+      padding : 2%; 
+      font-size : 1em;
+      box-shadow : 5px 5px black;
+   }
 }
 
 @media screen and (max-width: 400px)
