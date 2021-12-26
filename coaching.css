@@ -71,14 +71,14 @@ body
    display : flex;
    justify-content : space-between;
    font-size : 1.5em;
-   width : 20em;
+   width : 22em;
    margin-right : 1em;
 }
 
 #buttons a 
 {
    padding : 0.25em;
-   width : 8em;
+   width : 9em;
    text-align : center;
    text-decoration : none;
    border : 3px solid #36454f;
