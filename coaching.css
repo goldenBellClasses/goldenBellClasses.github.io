@@ -106,7 +106,7 @@ body
    margin : auto;
 }
 
-#background { width : 100%; }
+.mySlides { width : 100%; }
 
 #copyright
 {
@@ -267,7 +267,7 @@ body
 
    #buttons
    {
-      margin-top : 1em;
+      margin-top : 1.5em;
       margin-left : 1em;
       margin-right : 1em;
       font-size : 1em;
