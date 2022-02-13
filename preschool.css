@@ -118,7 +118,7 @@ body
    transform : translateY(4px);
 }
 
-#background { width : 100%; }
+.mySlides { width : 100%; }
 
 #opening_desc
 {
@@ -275,7 +275,7 @@ body
 
    #buttons, .content
    {
-      margin-top : 1em;
+      margin-top : 1.25em;
       margin-left : 1em;
       margin-right : 1em;
       font-size : 0.75em;
