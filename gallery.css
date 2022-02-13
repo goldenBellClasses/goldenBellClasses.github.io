@@ -56,6 +56,13 @@ body
    text-shadow : -1px 2px 0 #fff, 2px 1px 0 #fff, 1px -2px 0 #fff, -2px -1px 0 #fff;
 }
 
+#xmas
+{
+   background-image : linear-gradient(to right, green , whitesmoke, green);
+   color : red;
+   text-shadow : -1px 2px 0 #fff, 2px 1px 0 #fff, 1px -2px 0 #fff, -2px -1px 0 #fff;
+}
+
 #copyright
 {
    text-align : center;
